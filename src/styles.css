@@ -1,3 +1,70 @@
-body {
-    background-color: cyan;
+body > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background-image: url("weather.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    gap: 1rem;
+}
+
+.temp-unit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.temp-unit > * {
+    font-size: large;
+}
+
+input[type="text"] {
+    min-width: 50%;
+    outline: none;
+    text-align: left;
+}
+
+button, input[type="text"] {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    color: forestgreen;
+}
+
+.weather-info {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border: none;
+}
+
+.temps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.temps h4 {
+    margin-bottom: 0.5rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.temp-unit > label {
+    margin-right: 0.5rem;
 }
