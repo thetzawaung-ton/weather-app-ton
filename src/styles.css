@@ -36,6 +36,9 @@ input[type="text"] {
 }
 
 button, input[type="text"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
