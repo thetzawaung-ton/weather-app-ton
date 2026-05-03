@@ -1,4 +1,4 @@
-body > * {
+body * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,16 +29,24 @@ body > * {
     font-size: large;
 }
 
-input[type="text"] {
-    min-width: 50%;
-    outline: none;
-    text-align: left;
-}
-
-button, input[type="text"] {
+input[type="search"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    min-width: 50%;
+    outline: none;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    color: forestgreen;
+
+}
+
+button {
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     font-size: 1.5rem;
