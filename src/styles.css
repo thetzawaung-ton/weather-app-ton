@@ -16,8 +16,13 @@ body * {
     padding: 1rem 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: min-content min-content 1fr min-content;
     gap: 1rem;
+}
+
+.credit, .credit > * {
+    padding: 0.25rem;
+    color: #ff474c;
 }
 
 .temp-unit {
